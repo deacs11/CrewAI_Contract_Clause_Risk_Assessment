@@ -1,4 +1,4 @@
-## CrewAI Contract Clause Risk Assessment Assistant
+## CrewAI Contract clause risk assessment assistant
 
 This project implements a CrewAI agent team designed to **assist** in the preliminary review of legal contracts. The agents work together to parse contract text, classify clauses, identify potential risk patterns based on predefined criteria, spot ambiguities, and generate a structured "Review Brief" highlighting areas that may warrant closer inspection by a legal professional.
 
@@ -14,7 +14,7 @@ This project implements a CrewAI agent team designed to **assist** in the prelim
 ## Features
 
 *   **Contract parsing:** Attempts to segment contract text into distinct clauses or sections.
-*   **Clause classification (Optional):** Categorizes clauses by common types (e.g., Liability, Term, Payment).
+*   **Clause classification (optional):** Categorizes clauses by common types (e.g., Liability, Term, Payment).
 *   **Risk pattern detection:** Scans clauses for predefined keywords or structures often associated with higher risk (e.g., broad indemnities, liability limitations, vague warranties).
 *   **Ambiguity identification:** Looks for undefined critical terms, vague phrasing, or potentially contradictory statements.
 *   **Structured reporting:** Consolidates flagged items into a "Review Brief" organized for efficient human review.
@@ -46,10 +46,10 @@ This project implements a CrewAI agent team designed to **assist** in the prelim
 1.  **Input contract text (Cell 3):**
     *   Locate the cell titled `# @title 3. Define Input Contract Text...`.
     *   **Replace** the example text within the triple quotes (`"""..."""`) assigned to the `contract_text` variable with the actual contract text you want to analyze. Try to preserve formatting like numbering if possible.
-    *   **Acknowledge the Disclaimer** printed by this cell before proceeding.
+    *   **Acknowledge the disclaimer** printed by this cell before proceeding.
 2.  **Select LLM (Optional - Cell 4):**
     *   In Cell 4 (`# @title 4. Select LLM...`), ensure you are using an appropriate model. GPT-4 Turbo is highly recommended.
-3.  **Run Cells Sequentially:** Execute the remaining cells (4 through 8) in order.
+3.  **Run cells sequentially:** Execute the remaining cells (4 through 8) in order.
     *   Cell 5 defines the specialized agents for contract analysis.
     *   Cell 6 defines the sequence of tasks (Parse, Classify, Detect Risks, Identify Ambiguities, Generate Brief).
     *   **Cell 7** creates the `Crew` and starts the analysis using `kickoff()`. This step will involve significant LLM processing and API calls. Monitor the verbose output.
