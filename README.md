@@ -33,7 +33,7 @@ This project implements a CrewAI agent team designed to **assist** in the prelim
 2.  **Open in Colab:** Upload and open the notebook in Google Colab ([colab.research.google.com](https://colab.research.google.com/)).
 3.  **Install libraries:** Run the first cell (`# @title 1. Install Necessary Libraries`) to install `crewai`, `langchain-openai`, etc.
 4.  **Configure OpenAI API Key in Colab Secrets:**
-    *   In Colab, click the **Key icon (`<>`)** in the left sidebar ("Secrets").
+    *   In Colab, click the **Key icon** in the left sidebar ("Secrets").
     *   Enable "Notebook access".
     *   Add **one** new secret:
         *   Name: `OPENAI_API_KEY`
